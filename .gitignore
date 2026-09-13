@@ -49,4 +49,8 @@ vite.config.ts.*
 *.sln
 *.sw?
 .history
-.cursor
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/skills/
+!.cursor/skills/**

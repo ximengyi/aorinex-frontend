@@ -1,0 +1,25 @@
+---
+description: 同级后端 / 官网仓库与当前管理端项目的目录约定
+alwaysApply: true
+---
+
+# Sibling repositories
+
+**权威说明见仓库根目录 `AGENTS.md`（Related Sibling Repositories）。** 本规则与之保持一致，供 Cursor 自动注入。
+
+本仓库为前端管理端 **aorinex-frontend**。同级目录还有：
+
+- `aorinex-backend`：Webman 后端接口
+- `aorinex-nuxt`：Nuxt 官网 / 营销站
+
+## 路径规则
+
+- 管理端：`…/<workspace>/aorinex-frontend`
+- 后端：`…/<workspace>/aorinex-backend`
+- 官网：`…/<workspace>/aorinex-nuxt`
+
+示例：管理端 `/www/wwwroot/aorinex-frontend` → 后端 `/www/wwwroot/aorinex-backend`、官网 `/www/wwwroot/aorinex-nuxt`。
+
+## 何时去兄弟仓库
+
+查看 / 修改 API、表结构、权限规则、鉴权逻辑时，直接读写 `aorinex-backend`。联调官网公开 API / 营销页字段时，直接读写 `aorinex-nuxt`。三仓独立 Git，提交勿混进本仓。
